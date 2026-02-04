@@ -24,7 +24,8 @@ body {
     height: 100%;
 }
 
-.login-form {
+.login-form,
+.register-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,7 +36,8 @@ body {
     border-radius: 20px;
 }
 
-.login-text {
+.login-text,
+.register-text {
     color: rgb(44, 44, 44);
     margin: 40px 0 25px 0;
     font-weight: bold;
@@ -48,7 +50,10 @@ body {
 }
 
 .name-input,
-.password-input {
+.password-input,
+.password-input-first,
+.password-input-repeat,
+.phone-input {
     font-size: 17px;
     width: 275px;
     margin-bottom: 15px;
@@ -61,7 +66,10 @@ body {
 }
 
 .name-input:focus,
-.password-input:focus {
+.password-input:focus,
+.password-input-first:focus,
+.password-input-repeat:focus,
+.phone-input:focus {
     border: none;
     outline: none;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
@@ -69,13 +77,25 @@ body {
 }
 
 .name-input:hover,
-.password-input:hover {
+.password-input:hover,
+.password-input-first:hover,
+.password-input-repeat:hover,
+.phone-input:hover {
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.06);
     transform: scale(1.015);
 }
 
-.password-input {
+.password-container,
+.password-container-first {
     margin-right: 8px;
+}
+
+.password-container-repeat {
+    margin-left: 5px;
+}
+
+.phone-container {
+    margin-left: 17px;
 }
 
 .submit-btn {

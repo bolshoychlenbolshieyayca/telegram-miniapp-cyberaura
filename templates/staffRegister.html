@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Регистрация сотрудника
+{% endblock %}
+
+{% block body %}
+<div class="logo-container">
+    <img src="{{ url_for('static', filename='icons/staffLogin/cybaraura2.svg') }}" alt="Логотип">
+</div>
+<form action="" class="register-form">
+    <legend class="register-text">РЕГИСТРАЦИЯ СОТРУДНИКОВ</legend>
+    
+    <div class="name-container">
+        <label for="fullname">Придумайте логин:</label>
+        <input type="text" name="username" class="name-input">
+    </div>
+
+    <div class="password-container-first">
+        <label for="password">Придумайте пароль:</label>
+        <input type="password" name="password" class="password-input-first">
+    </div>
+    
+    <div class="password-container-repeat">
+        <label for="password">Повторите пароль:</label>
+        <input type="password" name="password" class="password-input-repeat">
+    </div>
+    
+    <div class="phone-container">
+        <label for="telephone">Номер телефона:</label>
+        <input type="tel" name="phone" placeholder="+7 (999) 123-45-67" class="phone-input" required>
+    </div>
+
+    
+    
+    <div class="form-actions">
+        <button class="submit-btn">Войти</button>
+    </div>
+</form>
+{% endblock %}
