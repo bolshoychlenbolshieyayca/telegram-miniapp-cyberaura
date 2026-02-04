@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;  
+    background: linear-gradient(20deg, 
+    #0e0000 0%, 
+    #360000 25%, 
+    #6b0000 50%, 
+    #910000 75%, 
+    #d60000 100%);
+}
+
+.logo-container {
+    margin-top: 100px;
+    width: 40%;
+    height: 100%;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 10px 80px 60px 80px;
+    background: linear-gradient(20deg, rgb(210, 210, 210), rgb(240, 240, 240));
+    border: none;
+    border-radius: 20px;
+}
+
+.login-text {
+    color: rgb(44, 44, 44);
+    margin: 40px 0 25px 0;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.login-form label {
+    font-size: 17px;
+    color: rgb(44, 44, 44);
+}
+
+.name-input,
+.password-input {
+    font-size: 17px;
+    width: 275px;
+    margin-bottom: 15px;
+    border: none;
+    padding: 5px 10px;
+    height: 35px;
+    border-radius: 5px;
+
+    transition: all 0.3s;
+}
+
+.name-input:focus,
+.password-input:focus {
+    border: none;
+    outline: none;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(1.01);
+}
+
+.name-input:hover,
+.password-input:hover {
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.06);
+    transform: scale(1.015);
+}
+
+.password-input {
+    margin-right: 8px;
+}
+
+.submit-btn {
+    font-size: 20px;
+    color: rgb(44, 44, 44);
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin-top: 10px;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-btn:hover {
+    transform: scale(1.02);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn:active {
+    transform: scale(0.97);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}

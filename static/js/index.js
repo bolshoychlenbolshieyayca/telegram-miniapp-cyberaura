@@ -60,9 +60,9 @@ function switchLanguage(lang) {
 
 function updateLogoImage() {
     if (theme_ === 'dark') {
-        logoImage.src = language === 'ru' ? '/static/icons/кибераура2.svg' : '/static/icons/cybaraura2.svg'
+        logoImage.src = language === 'ru' ? '/static/icons/miniApp/кибераура2.svg' : '/static/icons/miniApp/cybaraura2.svg'
     } else if (theme_ === 'light') {
-        logoImage.src = language === 'ru' ? '/static/icons/кибераура2Dark.svg' : '/static/icons/cybaraura2Dark.svg'
+        logoImage.src = language === 'ru' ? '/static/icons/miniApp/кибераура2Dark.svg' : '/static/icons/miniApp/cybaraura2Dark.svg'
     }
 }
 
@@ -116,8 +116,8 @@ function switchTheme(theme) {
     changeThemeBlock.style.background = theme === 'dark' ? 'linear-gradient(20deg, rgb(15, 15, 15), rgb(22, 22, 22))' : 'linear-gradient(20deg, rgb(210, 210, 210), rgb(230, 230, 230))'
     changeThemeBlock.style.boxShadow = theme === 'dark' ? '3px 3px 7px rgba(0, 0, 0, 0.7)' : 'box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);'
     highlightBlockTheme.style.background = theme === 'dark' ? 'linear-gradient(20deg, rgb(6, 6, 6), rgb(12, 12, 12))' : 'linear-gradient(20deg, rgb(150, 150, 150), rgb(215, 215, 215))'
-    moonLogo.src = theme === 'dark' ? '/static/icons/moonLight.svg' : '/static/icons/moonDark.svg'
-    sunLogo.src = theme === 'dark' ? '/static/icons/sunLight.svg' : '/static/icons/sunDark.svg'
+    moonLogo.src = theme === 'dark' ? '/static/icons/miniApp/moonLight.svg' : '/static/icons/miniApp/moonDark.svg'
+    sunLogo.src = theme === 'dark' ? '/static/icons/miniApp/sunLight.svg' : '/static/icons/miniApp/sunDark.svg'
 
     contactBtn.style.background = theme === 'dark' ? 'linear-gradient(20deg, rgb(22, 22, 22), rgb(30, 30, 30))' : 'linear-gradient(20deg, rgb(200, 200, 200), rgb(230, 230, 230))'
     contactBtn.style.boxShadow = theme === 'dark' ? '5px 5px 7px rgba(0, 0, 0, 0.6)' : '5px 5px 7px rgba(0, 0, 0, 0.4)'
