@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block body %}
-<div class="logo-container">
+<div class="logo-container-reg">
     <img src="{{ url_for('static', filename='icons/staffLogin/cybaraura2.svg') }}" alt="Логотип">
 </div>
 <form action="" class="register-form">
@@ -26,8 +26,13 @@
         <input type="password" name="password" class="password-input-repeat">
     </div>
     
+    <div class="email-container">
+        <label for="email">Введите почту:</label>
+        <input type="email" name="email" class="email-input">
+    </div>
+    
     <div class="phone-container">
-        <label for="telephone">Номер телефона:</label>
+        <label for="phone">Номер телефона:</label>
         <input type="tel" name="phone" placeholder="+7 (999) 123-45-67" class="phone-input" required>
     </div>
 

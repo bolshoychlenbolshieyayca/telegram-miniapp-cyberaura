@@ -18,8 +18,14 @@ body {
     #d60000 100%);
 }
 
-.logo-container {
+.logo-container-log {
     margin-top: 100px;
+    width: 40%;
+    height: 100%;
+}
+
+.logo-container-reg {
+    margin-top: 50px;
     width: 40%;
     height: 100%;
 }
@@ -53,6 +59,7 @@ body {
 .password-input,
 .password-input-first,
 .password-input-repeat,
+.email-input,
 .phone-input {
     font-size: 17px;
     width: 275px;
@@ -69,6 +76,7 @@ body {
 .password-input:focus,
 .password-input-first:focus,
 .password-input-repeat:focus,
+.email-input:focus,
 .phone-input:focus {
     border: none;
     outline: none;
@@ -80,6 +88,7 @@ body {
 .password-input:hover,
 .password-input-first:hover,
 .password-input-repeat:hover,
+.email-input:hover,
 .phone-input:hover {
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.06);
     transform: scale(1.015);
@@ -92,6 +101,10 @@ body {
 
 .password-container-repeat {
     margin-left: 5px;
+}
+
+.email-container {
+    margin-left: 35px;
 }
 
 .phone-container {
