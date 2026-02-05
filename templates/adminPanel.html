@@ -1,5 +1,22 @@
-{% extends 'base.html' %}
+{% extends 'basePanel.html' %}
 
 {% block title %}
 Админ панель
+{% endblock %}
+
+{% block body %}
+<header>
+    <div class="logo-container">
+        <img src="{{ url_for('static', filename='icons/staffLogin/cybaraura2.svg') }}" alt="Логотип" class="main-logo">
+
+        <div class="adminPanel-text">
+            <span class="admin-text">Admin</span><span class="panel-text">Panel</span>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href=""></a></li>
+        </ul>
+    </nav>
+</header>
 {% endblock %}

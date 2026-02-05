@@ -89,7 +89,7 @@ def login():
 
     return render_template('staffLogin.html')
 
-@app.route("/dashboard")
+@app.route("/AdminPanel")
 def dashboard():
     if 'user_id' not in session:
         flash('Пожалуйста, войдите в систему!', 'error')
@@ -97,12 +97,7 @@ def dashboard():
 
     user_name = session.get('user_name', 'Пользователь')
 
-    return f'''
-    <h1>Личный кабинет</h1>
-    <p>Привет, {user_name}!</p>
-    <p>Вы успешно вошли в систему.</p>
-    <a href="/logout">Выйти</a>
-    '''
+    return render_template('adminPanel.html')
 
 @app.route("/logout")
 def logout():
