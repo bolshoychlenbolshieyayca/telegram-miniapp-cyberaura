@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Регистрация сотрудника
+{% endblock %}
+
+{% block body %}
+<div class="logo-container-reg">
+    <img src="{{ url_for('static', filename='icons/staffLogin/cybaraura2.svg') }}" alt="Логотип">
+</div>
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        <div class="flash-messages">
+            {% for category, message in messages %}
+                <div class="flash-message {{ category }}">{{ message }}</div>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endwith %}
+
+<form method="POST" class="register-form">
+    <legend class="register-text">РЕГИСТРАЦИЯ СОТРУДНИКОВ</legend>
+    
+    <div class="name-container">
+        <label for="fullname">Придумайте логин:</label>
+        <input type="text" name="username" class="name-input">
+    </div>
+
+    <div class="password-container-first">
+        <label for="password">Придумайте пароль:</label>
+        <input type="password" name="password" class="password-input-first">
+    </div>
+    
+    <div class="password-container-repeat">
+        <label for="r_password">Повторите пароль:</label>
+        <input type="password" name="r_password" class="password-input-repeat">
+    </div>
+    
+    <div class="email-container">
+        <label for="email">Введите почту:</label>
+        <input type="email" name="email" class="email-input">
+    </div>
+    
+    <div class="phone-container">
+        <label for="phone">Номер телефона:</label>
+        <input type="tel" name="phone" placeholder="+7 (999) 123-45-67" class="phone-input" required>
+    </div>
+
+    
+    
+    <div class="form-actions">
+        <button class="submit-btn">Регистрация</button>
+    </div>
+</form>
+{% endblock %}

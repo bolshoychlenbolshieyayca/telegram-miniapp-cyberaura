@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Авторизация сотрудника
+{% endblock %}
+
+{% block body %}
+<div class="logo-container-log">
+    <img src="{{ url_for('static', filename='icons/staffLogin/cybaraura2.svg') }}" alt="Логотип">
+</div>
+<form action="" class="login-form">
+    <legend class="login-text">ВХОД ДЛЯ СОТРУДНИКОВ</legend>
+    
+    <div class="name-container">
+        <label for="fullname">Логин:</label>
+        <input type="text" name="username" class="name-input">
+    </div>
+
+    <div class="password-container">
+        <label for="password">Пароль:</label>
+        <input type="password" name="password" class="password-input">
+    </div>
+    
+    <div class="form-actions">
+        <button class="submit-btn">Войти</button>
+    </div>
+</form>
+{% endblock %}
+
+    

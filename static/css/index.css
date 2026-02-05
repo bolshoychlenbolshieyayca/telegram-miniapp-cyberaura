@@ -1,0 +1,154 @@
+/* HEADER */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.site-features-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 10px;
+}
+
+.translate-block {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 7px;
+    background: linear-gradient(20deg, rgb(15, 15, 15), rgb(22, 22, 22));
+    border-radius: 12px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.7);
+}
+
+.highlight-block {
+    position: absolute;
+    border-radius: 5px;
+    width: 35%;
+    height: 60%;
+    top: 7px;
+    left: 8.7px;
+    background: linear-gradient(20deg, rgb(6, 6, 6), rgb(12, 12, 12));
+    
+    transition: all 0.4s;
+}
+
+#rus-lang,
+#eng-lang {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 15px;
+    color: rgb(230, 230, 230);
+    background: transparent;
+    width: 50%;
+    height: 30%;
+    padding: 4px 6px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+
+    transition: all 0.1s;
+}
+
+#rus-lang {
+    margin-right: 4px;
+}
+
+#eng-lang {
+    margin-left: 4px;
+}
+
+.change-theme-block {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(20deg, rgb(15, 15, 15), rgb(22, 22, 22));
+    border-radius: 12px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.7);
+    
+}
+
+.highlight-block-theme {
+    position: absolute;
+    border-radius: 5px;
+    width: 35%;
+    height: 70%;
+    top: 3.7px;
+    left: 5.5px;
+    background: linear-gradient(20deg, rgb(6, 6, 6), rgb(12, 12, 12));
+
+    transition: all 0.4s;
+}
+
+.moon-logo-btn,
+.sun-logo-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 2.5px 5px;
+    transition: all 0.1s;
+    z-index: 1;
+}
+
+.moonLogo {
+    width: 25px;
+    height: 25px;
+}
+
+.sunLogo {
+    width: 20px;
+    height: 20px;
+}
+
+header > nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.logo-container {
+    margin: 50px 30px;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+#contact-btn,
+#info-btn {
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(230, 230, 230);
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(20deg, rgb(22, 22, 22), rgb(30, 30, 30));
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+    padding: 11px 20px;
+    margin: 0 15px;
+    cursor: pointer;
+
+    transition: all 0.2s;
+}
+
+/* BODY */
+
+body {
+    background-color: rgb(46, 46, 46);
+}
